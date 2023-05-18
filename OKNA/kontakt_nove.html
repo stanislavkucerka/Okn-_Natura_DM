@@ -191,39 +191,136 @@
 
     <!-----------------------------------------------------------------------------------------------------OBSAH !!!!!!!!!!!!!!!!!!!!!!-->
 
-    <section class="inner-page"
-    style="
-    background-image: url(../OKNA/assets/img/worker.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white">
-      <div class="container">
-        <h2 style="text-align: center;">Naša spoločnosť zabezpečuje:</h2>
+   <!-- ======= Contact Section ======= -->
+   <section id="contact" class="contact section-bg">
+    <div class="container">
+      <div class="section-title">
+        <h2>Kontaktujte nás</h2>
         <p>
-          <ul style="text-align: center; list-style: none;">
-            <li>stavby na kľúč</li>
-            <li>prestavby</li>
-            <li>krovy, strechy</li>
-            <li>pokrývanie, zastrešovanie</li>
-            <li>obklady</li>
-            <li>dlažby, plávajúce podlahy</li>
-            <li>kúpelňové jadrá</li>
-            <li>sanitárna keramika</li>
-            <li>fasádne a zateplovacie práce</li>
-            <li>stavba komínov SCHIEDEL</li>
-            <li>búracie práce</li>
-            <li>čistenie komínov</li>
-            <li>potvrdzovanie o vykonaní čistenia a kontroly komína</li>
-            <li>vložkovanie komínov</li>
-            <li>frézovanie komínov</li>
-            <li>výstavba viacvrstvových komínov</li>
-            <li>rekonštrukcia komínov</li>
-            <li>odborné poradenstvo</li>
-          </ul>
+          Potrebujete poradiť? Máte záujem o cenovú ponuku? Niečo sa pokazilo? Sme tu pre Vás.
         </p>
-
       </div>
-    </section>
+    </div>
+    <!----------------------------------------------------------------- TU SOM ZAKOMENTOVAL GOOGLE MAPU ! 
+    <div class="map">
+      <iframe
+        style="border: 0; width: 100%; height: 350px"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+    -->
+    <div class="container">
+      <div class="row mt-5 justify-content-center">
+        <div class="col-lg-10">
+          <div class="info-wrap">
+            <div class="row">
+              <div class="col-lg-4 info">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Adresa:</h4>
+                <p>Sedličná 108<br />Trenčianske Stankovce 913 11</p>
+              </div>
+
+              <div class="col-lg-4 info mt-4 mt-lg-0">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@okna-natura.sk</p>
+              </div>
+
+              <div class="col-lg-4 info mt-4 mt-lg-0">
+                <i class="bi bi-phone"></i>
+                <h4>Tel.:</h4>
+                <p>+421 905 600 254<br />+421 910 182 138</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!------------------------------------------------------------------KONTAKTNY FORMULAR - TOTO SOM PRIDAL, MOŽNO DAME PREČ -->
+
+      <div class="container">
+        <div class="row mt-5 justify-content-center">
+          <div class="col-lg-10">
+            <div class="info-wrap">
+              <div class="row">
+                <div class="kontaktny-formular" style="text-align: center;">
+                  <h3>Kontaktný formulár</h3>
+                  <p>Zanechajte nám správu cez kontaktný formulár a my sa Vám ozveme.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!------------------------------------------------------------------------------------>
+
+      <div class="row mt-5 justify-content-center">
+        <div class="col-lg-10">
+          <form
+            action="forms/contact.php"
+            method="post"
+            role="form"
+            class="php-email-form"
+          >
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  id="name"
+                  placeholder="Vaše meno"
+                  required
+                />
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="email"
+                  placeholder="Váš Email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input
+                type="text"
+                class="form-control"
+                name="subject"
+                id="subject"
+                placeholder="Predmet"
+                required
+              />
+            </div>
+            <div class="form-group mt-3">
+              <textarea
+                class="form-control"
+                name="message"
+                rows="5"
+                placeholder="Správa"
+                required
+              ></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">
+                Vaša správa bola odoslaná. Ďakujeme!
+              </div>
+            </div>
+            <div class="text-center">
+              <button type="submit">Odoslať správu</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
 
   </main><!-- End #main --------------------------------------------------------------------------------------------------------------------->
 
