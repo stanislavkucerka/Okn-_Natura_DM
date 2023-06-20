@@ -242,7 +242,9 @@ h6 {
   transition: 0.5s;
 }
 
-@media (max-width: 991px) {
+/*bolo 991px */
+
+@media (max-width: 1380px) {
   .mobile-nav-toggle {
     display: block;
   }
@@ -1390,4 +1392,29 @@ section {
 #footer .credits {
   text-align: center;
   font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .fotky_sietka {
+    flex-direction: column;
+    text-align: center;
+  }
+  .fotky_sietka img {
+    text-align: center;
+  }
+}
+
+@media (max-width: 499px) {
+  #hero .btn-get-started scrollto {
+    display: block;
+    flex-direction: column;
+  }
+}
+
+
+
+@media (max-width: 499px) {
+  .uvodne-buttony .skap {
+    flex-direction: column;
+  }
 }
