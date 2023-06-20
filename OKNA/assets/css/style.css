@@ -424,6 +424,12 @@ h6 {
     margin-bottom: 30px;
   }
 }
+/*
+@media (min-width: 1024px) {
+  #servis_okien {
+    background-attachment: fixed;
+  }
+}
 
 /*--------------------------------------------------------------
 # Sections General
@@ -1392,6 +1398,17 @@ section {
 #footer .credits {
   text-align: center;
   font-size: 13px;
+}
+
+#servis_okien {
+  margin-top: 3%;
+  background: url("../img/servis_okien_pozadie_nove_edit.jpg") center center no-repeat;
+  font-size: 14px;
+  
+  
+  background-size: cover;
+  background-attachment: fixed;
+
 }
 
 @media (max-width: 600px) {
