@@ -181,7 +181,8 @@
 
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
-      <div class="container">
+      <div class="container" style="
+        padding-top: 2%;">
 
         <ol>
           <li><a href="index.html">Domov</a></li>
@@ -228,13 +229,13 @@
               <div class="col-lg-4 info mt-4 mt-lg-0">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@okna-natura.sk</p>
+                <p><a href="mailto:info@okna-natura.sk">info@okna-natura.sk</a> </p>
               </div>
 
               <div class="col-lg-4 info mt-4 mt-lg-0">
                 <i class="bi bi-phone"></i>
                 <h4>Tel.:</h4>
-                <p>+421 905 600 254<br />+421 910 182 138</p>
+                <p><a href="tel:+421905600254"> +421 905 600 254 </a><br/><a href="tel:+421910182138"> +421 910 182 138</a></p>
               </div>
             </div>
           </div>
@@ -259,68 +260,81 @@
 
          <!------------------------------------------------------------------------------------>
 
-      <div class="row mt-5 justify-content-center">
-        <div class="col-lg-10">
-          <form
-            action="forms/contact.php"
-            method="post"
-            role="form"
-            class="php-email-form"
-          >
-            <div class="row">
-              <div class="col-md-6 form-group">
+         <div class="row mt-5 justify-content-center">
+          <div class="col-lg-10">
+            <form
+              action="send-email.php"
+              method="post"
+              role="form"
+              class="php-email-form"
+            >
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="name"
+                    placeholder="Vaše meno"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                    placeholder="Váš Email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group mt-3">
                 <input
                   type="text"
-                  name="name"
                   class="form-control"
-                  id="name"
-                  placeholder="Vaše meno"
+                  name="subject"
+                  id="subject"
+                  placeholder="Predmet"
                   required
                 />
               </div>
-              <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input
-                  type="email"
+              <div class="form-group mt-3">
+                <textarea
                   class="form-control"
-                  name="email"
-                  id="email"
-                  placeholder="Váš Email"
+                  name="message"
+                  id="message"
+                  rows="5"
+                  placeholder="Správa"
                   required
-                />
+                ></textarea>
               </div>
-            </div>
-            <div class="form-group mt-3">
-              <input
-                type="text"
-                class="form-control"
-                name="subject"
-                id="subject"
-                placeholder="Predmet"
-                required
-              />
-            </div>
-            <div class="form-group mt-3">
-              <textarea
-                class="form-control"
-                name="message"
-                rows="5"
-                placeholder="Správa"
-                required
-              ></textarea>
-            </div>
-            <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">
-                Vaša správa bola odoslaná. Ďakujeme!
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">
+                  Vaša správa bola odoslaná. Ďakujeme!
+                </div>
               </div>
-            </div>
-            <div class="text-center">
-              <button type="submit">Odoslať správu</button>
-            </div>
-          </form>
+
+              <div style="
+              display: flex;
+              justify-content: left;
+              max-width: 30%;
+              font-size: 10px;">
+                <label>
+                  <input type="checkbox" name="gdpr" required />
+                  Oboznámil(a) som sa s <a href="../OKNA/assets/podmienky-okna.pdf" target="_blank"> Podmienkami ochrany súkromia </a> a súhlasím so spracovaním osobných údajov.
+                </label>
+              </div>
+
+              <div class="text-center">
+                <button type="submit" id="submitBtn" disabled>Odoslať správu</button>
+              </div>
+            </form>
+          </div>
         </div>
-      </div>
     </div>
   </section>
   <!-- End Contact Section -->
