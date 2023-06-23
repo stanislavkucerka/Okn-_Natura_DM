@@ -1411,6 +1411,10 @@ section {
 
 }
 
+.picovina {
+  
+}
+
 @media (max-width: 600px) {
   .fotky_sietka {
     flex-direction: column;
@@ -1433,5 +1437,20 @@ section {
 @media (max-width: 499px) {
   .uvodne-buttony .skap {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 860px) {
+  .aluplast {
+    flex-direction: column;
+  }
+  .picovina {
+    width: 100%;
+  }
+}
+
+@media (max-width: 860px) {
+  .aluplast_5000 {
+    flex-direction: column-reverse;
   }
 }
