@@ -1477,3 +1477,10 @@ section {
     flex-direction: column-reverse;
   }
 }
+
+@media (max-width: 802px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
