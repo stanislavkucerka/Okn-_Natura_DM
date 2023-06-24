@@ -1422,6 +1422,17 @@ section {
     text-decoration-color: #85b0be;
 }
 
+.nadpisy-mensie {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 60px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #052c3f;
+  text-decoration: underline;
+  text-decoration-color: #85b0be;
+}
+
 .hlavne {
   font-size: 2.05em;
   color: #85b0be;
