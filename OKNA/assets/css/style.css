@@ -1411,7 +1411,21 @@ section {
 
 }
 
+.nadpisy {
+  font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #052c3f;
+    text-decoration: underline;
+    text-decoration-color: #85b0be;
+}
 
+.hlavne {
+  font-size: 2.05em;
+  color: #85b0be;
+}
 
 @media (max-width: 600px) {
   .fotky_sietka {
