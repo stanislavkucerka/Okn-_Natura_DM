@@ -1438,6 +1438,12 @@ section {
   color: #85b0be;
 }
 
+.salamander_2 {
+  text-align: center; 
+  width: 50%; 
+  padding-left: 2%;
+}
+
 @media (max-width: 600px) {
   .fotky_sietka {
     flex-direction: column;
@@ -1484,3 +1490,14 @@ section {
     text-align: center;
   }
 }
+
+@media (max-width: 1050px) {
+  .salamander {
+    flex-direction: column;
+    width: 100%;
+  }
+  .salamander_2 {
+    width: 100%;
+  }
+}
+
